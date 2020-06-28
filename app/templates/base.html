@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% if title %}
+        <title>{{ title }} - website </title>
+        {% else %}
+        <title> "Welcome Guest!" </title>
+        {% endif %}
+    </head>
+    <body>
+        <div> website:
+            <a href="/index"> Home </a>
+        </div>
+        <hr>
+        {% block contend %}{% endblock %}
+
+    </body>
+</html>
