@@ -239,13 +239,9 @@ def enter_RpiName():
     if form.validate_on_submit():
 
         current_user.set_rpi_hash(form.rpiname.data)
-        print(form.rpiname.data)
         db.session.commit()
         flash('Your changes have been saved.')
 
-        x = User.query.all()
-        for i in x:
-            print(i.rpiname)
         return redirect(url_for('main.enter_RpiName'))
 
     elif request.method == 'GET':

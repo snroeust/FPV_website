@@ -36,7 +36,7 @@ class udp_handler(threading.Thread):
         c = 0
         print("UDP RUNS")
         while True:
-            if c > 1000:
+            if c > 10000:
                 self.di.clear_dic()
                 dump_buffer(self.s)
                 c=0
