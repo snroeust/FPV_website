@@ -27,14 +27,14 @@ class Config(object):
     JOBS = [
         {
             'id': 'tcp_handler',
-            'func': '__main__:start_tcp_Connections',
+            'func': 'website:start_tcp_Connections',
             'args': (),
             'max_instances': 1000
         },
 
         {
             'id': 'udp_handler',
-            'func': '__main__:start_udp_Connections',
+            'func': 'website:start_udp_Connections',
             'args': (),
             'max_instances': 1000
         }
