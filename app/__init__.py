@@ -18,10 +18,12 @@ login.login_message = 'Please log in to access this page.'
 mail = Mail()
 bootstrap = Bootstrap()
 moment = Moment()
+print("jop")
 
 
 def create_app(config_class=Config):
     app = Flask(__name__)
+    print("app created")
     app.config.from_object(config_class)
 
     db.init_app(app)
