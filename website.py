@@ -37,15 +37,26 @@ def start_tcp_Connections():
 
 count = 0
 c = 0
+print("joooooooo")
 
 app = create_app()
-if __name__ == "__main__":
-    #app = create_app()
+
+def fdh():
+    # app = create_app()
     app.app_context().push()
+    print("joooooooo")
     mem.APP_MEM.set_app(app)
+    print("joooooooo")
     scheduler = APScheduler()
+    print("joooooooo")
     # it is also possible to enable the API directly
     # scheduler.api_enabled = True
     scheduler.init_app(app)
+    print("joooooooo")
     scheduler.start()
+    print("joooooooo")
+
+
+if __name__ == "__main__":
+    fdh()
     app.run(host='0.0.0.0')
