@@ -165,7 +165,13 @@ def generate(name, curr):
             print("cant get Adress!!!!!!!!!!!!!!!!!!!!!!")
 
     t = time.time()
+    tz = time.time()
+    getVideo= False
     while True:
+        tz = time.time()
+        if getVideo is False and tz > t + 3:
+            return None
+
         count += 1
         if count > 200:
             currentTime = time.time()
@@ -193,6 +199,7 @@ def generate(name, curr):
 
             seg = ip_seg.get_seg(addr)[0]
             ip_seg.dell_seg(addr)
+            getVideo = True
 
         except:
             continue
