@@ -28,7 +28,7 @@ class udp_handler(threading.Thread):
         self.name = name
         self.di = di
         self.s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.s.bind(('127.0.0.1', 12345))
+        self.s.bind(('127.0.0.1', 7763))
         dump_buffer(self.s)
 
 

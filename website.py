@@ -35,19 +35,16 @@ def start_tcp_Connections():
 
 
 
-
 count = 0
 c = 0
 app = create_app()
 app.app_context().push()
-
 mem.APP_MEM.set_app(app)
-
 scheduler = APScheduler()
 # it is also possible to enable the API directly
 # scheduler.api_enabled = True
 scheduler.init_app(app)
 scheduler.start()
 
-#app.run(host="127.0.0.1", port=5000, debug=True,
-        #threaded=True, use_reloader=False)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
