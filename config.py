@@ -24,7 +24,7 @@ class Config(object):
     ADMINS = ['eustergerling.ro@gmail.com']
 
 
-    """JOBS = [
+    JOBS = [
         {
             'id': 'tcp_handler',
             'func': 'website:start_tcp_Connections',
@@ -40,7 +40,7 @@ class Config(object):
         }
 
 
-    ]"""
+    ]
     SCHEDULER_API_ENABLED = True
 
     POSTS_PER_PAGE = 10
