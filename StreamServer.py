@@ -28,7 +28,7 @@ class udp_handler(threading.Thread):
         self.name = name
         self.di = di
         self.s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.s.bind(('127.0.0.1', 7763))
+        self.s.bind(('0.0.0.0', 7763))
         dump_buffer(self.s)
 
 
@@ -55,8 +55,8 @@ class tcp_handler(threading.Thread):
         threading.Thread.__init__(self)
         self.name = name
         self.ServerSocket = socket.socket()
-        self.host = '127.0.0.1'
-        self.port = 1233
+        self.host = '0.0.0.0'
+        self.port = 3345
         self.ThreadCount = 0
         self.app = app
 

@@ -24,23 +24,23 @@ class Config(object):
     ADMINS = ['eustergerling.ro@gmail.com']
 
 
-    JOBS = [
+    """JOBS = [
         {
             'id': 'tcp_handler',
             'func': 'website:start_tcp_Connections',
             'args': (),
-            'max_instances': 1000
+            'max_instances': 12
         },
 
         {
             'id': 'udp_handler',
             'func': 'website:start_udp_Connections',
             'args': (),
-            'max_instances': 1000
+            'max_instances': 12
         }
 
 
-    ]
+    ]"""
     SCHEDULER_API_ENABLED = True
 
     POSTS_PER_PAGE = 10

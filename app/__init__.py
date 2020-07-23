@@ -18,7 +18,6 @@ login.login_message = 'Please log in to access this page.'
 mail = Mail()
 bootstrap = Bootstrap()
 moment = Moment()
-print("jop")
 
 
 def create_app(config_class=Config):
