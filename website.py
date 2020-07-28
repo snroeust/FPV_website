@@ -15,7 +15,7 @@ def start_udp_Connections():
     if c == 0:
         c+=1
         print("UDP Connection Threads started ...")
-        con.start_udp_server(mem.IP_SEG)
+        con.start_udp_server(mem)
         print("UDP_Connection Threads running!")
         c += 1
     else:
@@ -57,5 +57,5 @@ print("<<<")
 
 if __name__ == "__main__":
     print("mal gucken ")
-    app.run(host='0.0.0.0')
+    app.run(host='127.0.0.1')
     print("<<<")

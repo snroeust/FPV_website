@@ -146,7 +146,7 @@ def generate(name, curr):
     """ Getting image udp frame &
         concate before decode and output image """
     dat = b''
-    ip_seg = mem.IP_SEG
+    ip_seg = mem
     n = name
     count = 0
     addr = [1]
