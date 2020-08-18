@@ -57,5 +57,5 @@ print("<<<")
 
 if __name__ == "__main__":
     print("mal gucken ")
-    app.run(host='127.0.0.1')
+    app.run()
     print("<<<")

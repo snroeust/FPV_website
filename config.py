@@ -22,6 +22,7 @@ class Config(object):
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['eustergerling.ro@gmail.com']
+    SERVER_NAME = '192.168.1.2:5000'
 
 
     JOBS = [
